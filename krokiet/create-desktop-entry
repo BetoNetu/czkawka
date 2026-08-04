@@ -45,7 +45,7 @@ Name=Krokiet
 Comment=File cleaning and duplicate finder
 Icon=${ICON_DIR}krokiet_logo_flag.png
     #The key is here! The env variable to force X11 by disableing Wayland...
-Exec=env SLINT_BACKEND=winit-femtovg WAYLAND_DISPLAY= ${BIN}
+Exec=${BIN}
 Path=${HOME}/.local/share
 Actions=
 Categories=X-GNOME-Utilities;
