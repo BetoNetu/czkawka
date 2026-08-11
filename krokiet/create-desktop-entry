@@ -29,7 +29,7 @@ check_dir() {
 }
 #Main
 if [ ! -f "${BIN}" ]; then
-    handle_error "Krokiet binary not found: ${BIN }"
+    handle_error "Krokiet binary not found: ${BIN}"
 fi
 if [ ! -f "${ICON_SRC}" ]; then
     handle_error "Source icon not found: ${ICON_SRC}"
@@ -44,7 +44,6 @@ Type=Application
 Name=Krokiet
 Comment=File cleaning and duplicate finder
 Icon=${ICON_DIR}krokiet_logo_flag.png
-    #The key is here! The env variable to force X11 by disableing Wayland...
 Exec=${BIN}
 Path=${HOME}/.local/share
 Actions=
@@ -53,8 +52,8 @@ Keywords=Krokiet;krokiet;czkawka;Czkawka;
 StartupWMClass=krokiet
 EOF
 if [ $? -ne 0 ]; then 
-    handle_error "Failed to create ${DESKTOP_FILE}!\n"
+    handle_error "Failed to create ${DESKTOP_FILE}!"
 fi
-printf "${DESKTOP_FILE} created sucessfully!\n"
+printf "${DESKTOP_FILE} created sucessfully!"
 exit 0
 #by betor
