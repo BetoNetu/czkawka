@@ -2,7 +2,7 @@
 
 set -euo pipefail
 #--------------------------------------
-#Creates a Functional .desktop icon for the distros it supports by falling back into X11 because Slint don't like acessing WAYLAND_APP_ID
+#Creates a Functional .desktop icon for the distros it supports
 #--------------------------------------
 #Variables
 BIN="${HOME}/.cargo/bin/krokiet"
